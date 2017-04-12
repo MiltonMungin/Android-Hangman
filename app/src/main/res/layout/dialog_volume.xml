@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/volume_title"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Volume"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/volume_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/volume_title">
+
+        <RadioButton
+            android:id="@+id/volume_100"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:gravity="left|center_vertical"
+            android:text="100%"/>
+
+        <RadioButton
+            android:id="@+id/volume_75"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:gravity="left|center_vertical"
+            android:text="75%"/>
+        <RadioButton
+            android:id="@+id/volume_50"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:gravity="left|center_vertical"
+            android:text="50%"/>
+        <RadioButton
+            android:id="@+id/volume_25"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:gravity="left|center_vertical"
+            android:text="25%"/>
+        <RadioButton
+            android:id="@+id/volume_0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:gravity="left|center_vertical"
+            android:text="0%"/>
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/volume_radio_group">
+        <Button
+            android:id="@+id/button_volume_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/button_volume_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:text="OK"/>
+
+    </LinearLayout>
+
+</LinearLayout>

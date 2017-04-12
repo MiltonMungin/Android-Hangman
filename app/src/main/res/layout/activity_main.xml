@@ -24,4 +24,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="110dp"
         android:text="Hangman" />
+
+    <ImageButton
+        android:id="@+id/button_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/volume"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="14dp" />
+
 </RelativeLayout>
